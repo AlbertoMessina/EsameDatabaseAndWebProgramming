@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+  }
+
+  /*Style utility bars */
+  #utility-bars{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;    
+      width: 100%;
+      padding:0.3rem;
+  }
+  #filter-div{
+    display: flex;
+  }
+  #filter-div button{
+    margin-left:15px; 
+    border: none; /* Prevent double borders */
+    box-shadow: inset 0px 0px 2px 0px black;
+    cursor: pointer;
+  }
+  
+  /* */
+  #network-div{
+      width: 100%;
+      height: calc(100vh - 185px);
+  }
+  .header-label{
+    height: 10%;
+    font-size: 1.2rem;
+  }
+  .user-follower-container{
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    background-color: lightgrey;
+  }
+
+  .user-public-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: lightgrey;
+
+  }
+
+  .user-follower-body , .user-public-body{
+    display: flex;   
+    flex-direction:row;
+    flex-wrap: wrap;
+    height: 80%;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  /* Style the search field */
+  .search-div{
+    margin-left:auto;
+  }
+  form.search input[type=text] {
+    padding: 3px;
+    font-size: 12px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.search button {
+    float: left;
+    width: 20%;
+    padding: 3px;
+    background: #2196F3;
+    color: white;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.search button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .user-card{
+    position:relative;
+    margin:10px;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 240px;
+    background-color: lightseagreen;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .user-card:hover{
+    box-shadow: 0 0 12px rgba(36, 36, 36, 0.432); 
+  }
+  .user-card-link{
+    width: 100%;
+    height:100%;
+    
+  }
+  .user-card-link:hover{
+    color: rgba(243, 243, 243, 0.062);
+  }
+  .layer {
+    background-color: rgba(153, 153, 153, 0.288);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.user-name-div{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 205px;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(255, 255, 255, 0.192);
+}
+
+.user-name{
+  display:inline-block;
+  text-overflow: ellipsis;  
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: 450;
+}
+.user-container{
+  display: flex;
+  flex-direction: column;
+}
+/**show modal style*/
+.workout-div{
+  display: none;
+  flex-direction: column;
+  padding:1rem;
+  min-height: calc(100vh - 150px);
+}
+.workout-div > .submit-container{
+  padding-top: 1.5rem;
+}
+
+#showHeader{
+  display: flex;
+  flex-direction:row;
+  padding-bottom:1rem;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+}
+#showHeader span{
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex: 33%;
+}
+
+#exerciseWorkoutList{
+  list-style-type: none;
+  padding-left: 1.2rem;
+  padding-bottom:0.5rem;
+}
+.exercise-list-elem{
+  display: flex;
+  flex-direction: row;
+  padding-bottom:0.5rem;
+  
+}
+.exercise-list-elem div{
+  flex: 33%;
+}
+
+
+/*Modal adjustment*/
+
+.show-right-title{
+  font-weight: bold;
+  padding-left: 0.3rem;
+}
+
+/*prova*/
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {  
+
+  #network-div{
+    min-height: calc(100vh - 210px);
+    height: 100%;
+    
+  }
+
+  .user-card { 
+    margin: 5px;
+    width: 150px;
+    height: 200px;
+  } 
+.user-public-body,.user-follower-body {
+  justify-content: center;
+  overflow-y: hidden;
+  min-height: calc(100vh - 211px);
+  }
+  .user-name{
+    font-size: 1rem;
+  }
+  .user-name-div {  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    top: 150px;
+    left: 0;   
+    height: 25%;  
+    
+  }
+
+  .show-left-title , .show-right-title{
+    font-size: 0.8rem;
+  }
+  #showHeader span {
+    font-size: 0.9rem;
+}
+
+}

@@ -1,0 +1,2 @@
+
+/*Ajax call for registration*/

@@ -1,0 +1,300 @@
+
+html, body {
+  height: 100%;
+}
+.nav-row{
+   background-color: lightgrey;
+}
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: #d6d6d6;
+    border-radius: 5px;
+    margin-bottom: 150px;
+}
+
+.button-container{
+   display: flex;
+}
+.welcome-card{
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   top:20px;
+   bottom:20px;
+   right:20px;
+}
+
+.welcome-card img {
+    max-width: 100%;
+    height: 500px;
+}
+
+.img-container {
+    display: inline-block;
+    flex:45%;
+    position: relative;
+}
+.card-info-container{
+    position: relative;
+    flex:45%;
+    width: 40%;
+    height: 500px;
+    right: 20px;
+    background-color: #FFF;
+}
+.card-text-container{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   top: 100px;
+}
+.card-text-container p{
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 30px;
+      
+}
+.positioning{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   height: 70%;
+   right: 15px;
+   bottom: 22px;
+   background-color: #b3b3b3d9;
+   box-shadow: 1px 1px 30px rgb(255 255 255 / 30%);
+   border-radius: 8px;
+   padding: 4px;
+   font-size: 17px;
+   line-height: 18px;
+   }
+/*front image*/
+.positioning-2{
+   position: absolute;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   height: 70%;
+   right: 15px;
+   bottom: 22px;
+   background-color: #e6e6e6c7;
+   box-shadow: 1px 1px 30px rgb(255 255 255 / 30%);
+   border-radius: 8px;
+   padding: 4px;
+   font-size: 17px;
+   line-height: 18px;
+
+}
+.welcome-card-presentation{
+   display: flex;
+   position: relative;
+   width: 100%;
+   }
+
+.welcome-card-presentation img {
+    max-width: 100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+
+}
+
+.img-container-presentation {
+    display: inline-block;
+    position: relative;
+}
+.positioning-presentation{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   width: 20%;
+   height: 20%;
+   right: 40%;
+   top: 46%;
+   color: white;
+   line-height: 18px;
+}
+.presentation-title{
+   display: inline-block;
+   font-size: 2rem;
+   font-weight: bold;
+   text-shadow: 1px 2px 3px black;
+   margin: 0;
+}
+
+/*FORM*/
+.sign-up-form{
+   position: relative;
+   width: 80%;
+   height: auto;
+}
+.sign-up-form label{
+   font-size: 1.4rem;
+   color:black;
+   font-weight: bold;
+   text-shadow: 1px 2px 3px white;
+}
+
+.form-group{
+   margin-bottom: 3rem;
+}
+
+.page{
+   background: #d6d6d6;
+}
+
+/*FOOTER */
+.footer {
+  height: 150px;
+}
+
+.nav-container{
+   display: block;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -150px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.hide-text{
+   display: block;
+}
+
+.blanck-space{
+   width: 100%;
+   min-height:30px;
+}
+
+@media screen and (max-width: 700px) {
+   .welcome-card img {
+       max-width: 100%;
+       width: 100%;
+       height: 300px !important;
+   }
+   .welcome-card-presentation img {
+       max-width: 100%;
+       height: calc(100vh - 200px) ;
+       min-height: 300px;
+   }
+   .presentation-title{
+      text-align: center;
+      font-size: 1.5rem;
+   }
+
+   .positioning-presentation{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width:100%;
+      height: 25%;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      top: 35%;
+      color: white;
+   }
+   .welcome-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      height: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      top:20px;
+      bottom:20px;
+      right:0px;
+      left:0px;
+   }
+
+   .img-container {
+       display: inline-block;
+       position: relative;
+   }
+
+   .card-info-container{
+       position: relative;
+       width: 100%;
+       height: 500px;
+       right: 0px;
+       left:0px;
+       background-color: #c3c2c2;
+   }
+   .form-group{
+      margin-bottom: 1rem;
+   }
+
+   .card-text-container{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      top: 15px;
+   }
+   .card-text-container p{
+         font-size: 1.1rem;
+         font-weight: bold;
+         margin-top: 5px;
+         
+   }
+/*FOOTER*/
+   .footer{
+      height:85px !important;
+   }
+   .page-wrap {
+     min-height: 100%;
+     /* equal to footer height */
+     margin-bottom: -60px;
+   }
+
+   .left-footer {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid lightgrey;
+   }
+
+
+   .right-footer{
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      justify-content: center;
+      margin-right: 5px;
+   }
+
+}
+
+/*Modal LogIn*/
+
+@media screen and (max-width:480px) {
+   .positioning-presentation{
+      top: 130px;
+   }
+
+   .welcome-card-presentation img {
+      max-width: 100%;
+      height: 320px;
+      
+  }
+  .positioning{
+     width: 70%;
+  }
+
+}

@@ -1,0 +1,308 @@
+
+.dashboard{
+    display: flex;
+    margin: 5px;
+    background: lightgray;
+    box-shadow: 0px 10px 21px #2f2f2f;
+    height: calc(100vh - 185px);
+} 
+.workout-show{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 50%;
+}
+.workout-show-header{
+    display: flex;
+    width:100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin:0.5em; 
+}
+.workout-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    width:95%;
+    padding:10px;
+    margin-bottom:10px;
+    background-color:white;
+    box-shadow: 5px 5px 10px #2f2f2f;
+    border-radius: 10px 10px;
+}
+.exerciseWorkoutList{
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
+    padding-bottom:0.5rem;
+    background-color: beige;
+}
+.exercise-list-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom:0.5rem;
+    font-weight: bold;
+   
+}
+.exercise-list-header div{
+    
+    flex:33%;
+}
+.exercise-list-elem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom:0.5rem;
+   
+}
+.exercise-list-elem div{
+    
+    flex:33%;
+}
+
+.empty-workouts{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*User Option*/
+.user-option{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+/*User-stat */
+.user-stat{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5em;
+    height: 65%;
+}
+
+#userStatHeader{
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top:0.4em;
+}
+
+#userStatBody{
+    display:flex;
+    flex-direction: column;
+}
+
+.stats-container{
+    display: flex;
+    flex-direction: row;
+}  
+.stats-container div{
+    width:50%;
+    padding:0.5em;
+}
+
+.title-label{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.stat-label{
+    padding-left: 5px;
+}
+
+
+/*Random generator*/
+.random-generator{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2em;
+}
+#randomGeneratorHeader{
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+   
+}
+
+#typeRadio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+
+
+#difficultyRadio{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+#difficultyRadio label{
+    padding-left:5px; 
+}
+
+
+
+#typeRadio label{
+    padding-left: 5px;
+}
+
+#randomGeneratorBtn{
+    padding-bottom: 5px;
+    font-size: 0.9em;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.workout-show::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .workout-show{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+  /*SHOW MODAL*/
+
+#showHeader{
+    display: flex;
+    flex-direction:row;
+    padding-bottom:1rem;
+    padding-left: 1.2rem;
+    padding-top: 1rem;
+}
+#showHeader span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex: 33%;
+}
+
+#exerciseWorkoutList{
+    list-style-type: none;
+    padding-left: 1.2rem;
+    padding-bottom:0.5rem;
+}
+.exercise-list-elem{
+    display: flex;
+    flex-direction: row;
+    padding-bottom:0.5rem;
+   
+}
+.exercise-list-elem div{
+    flex: 33%;
+}
+
+  #confirmButtonContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .dashboard{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    } 
+    .workout-show{
+        width: 100%;
+    }
+    .workout-card{
+        box-shadow: 0px 5px 10px #2f2f2f;
+        border-radius: 5px 5px;
+    }
+    .user-option{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .stat-label{
+        font-size: 0.8em;
+    }
+    .random-generator{
+        padding-bottom: 0.5em;
+    }
+    .random-generator label{
+        font-size: 0.8em;
+    }
+
+    #randomGeneratorHeader label{
+        font-size:1em;
+    }
+    #typeRadio label{
+        padding-left: 5px;
+    }
+  
+    #difficultyRadio  label{
+        margin-top: 5px;
+    }
+
+    #typeRadio > .radio-option{
+        flex-direction: column;
+    }
+
+    /*Modal  adjusment*/
+    .show-modal{
+        width: 95%;
+    }
+    .show-left-title{
+        font-size: 1rem;
+    }
+
+    #showHeader span{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen  and (max-width: 768px), 
+screen  and (max-height: 600px)
+{
+    .dashboard{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    } 
+    .workout-show{
+        width: 100%;
+    }
+    .user-option{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .stat-label{
+        font-size: 0.8em;
+    }
+    .random-generator{
+        padding-bottom: 0.5em;
+    }
+    .random-generator label{
+        font-size: 0.8em;
+    }
+
+
+ 
+}
+
+
+ 
+

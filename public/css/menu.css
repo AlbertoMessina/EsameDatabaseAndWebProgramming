@@ -1,0 +1,95 @@
+/****** SIDEBAR MENU ******/
+
+  
+  #side-menu{
+     display: flex;
+     flex-wrap: wrap;
+     padding: 10px;
+     padding-top: 10px;
+     color:white;
+     margin: 0px;
+  }
+  .side-menu-item{
+     display:flex;
+     width: 90%;
+     margin-top: 5px;
+     border-top: 1px solid #a0a0a030;
+     border-bottom: 1px solid #a0a0a030;
+  }
+  .side-menu-item:hover{
+     width: 100%;
+     background-color:#a0a0a030;
+  }
+  .side-menu-link{
+     color:white;
+     width: 100%;
+     padding: 2px;
+     text-decoration: none !important;
+  }
+  
+  #navigation-menu{
+     padding-left: 10px;
+     padding-bottom: 10px;
+     padding-top: 10px;
+     border-bottom: 1px solid #FFF;
+     border-top: 1px solid #FFF;
+  }
+  .menuShow-on{
+     justify-content: flex-start;
+  }
+  /*menu button*/
+  .menu-collapse{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     cursor:pointer;
+     transition: all .5s ease-in-out;
+  }
+  
+  .menu-btn_burger{
+     width: 20px;
+     height: 3px;
+     background: #fff;
+     border-radius: 2px;
+     box-shadow: 0 2px 3px rgba(255, 101, 47, 0.2);
+     transition: all .5s ease-in-out;
+  }
+  .menu-btn_burger::before,.menu-btn_burger::after{
+     content: '';
+     position: absolute;
+     width: 20px;
+     height: 3px;
+     background: #fff;
+     border-radius: 2px;
+     box-shadow: 0 2px 3px rgba(255, 101, 47, 0.2);
+     transition: all .5s ease-in-out;
+  }
+  .menu-btn_burger::before{
+     transform: translateY(-8px) !important;
+  }
+  .menu-btn_burger::after{
+     transform: translateY(8px)!important;
+  }
+  
+  .menu-collapse:hover{
+     background-color:#1b1b1b;
+  }
+  
+  .menu-collapse.collapsed .menu-btn_burger{
+     transform: translateX(-15px);
+     background: transparent;
+     box-shadow: none;
+  }
+  
+  .menu-collapse.collapsed .menu-btn_burger::before{
+     transform: rotate(45deg) translate(11px, -11px) !important;
+  }
+  .menu-collapse.collapsed .menu-btn_burger::after{
+     transform: rotate(-45deg) translate(11px, 11px)!important;
+  }
+  
+  /*END BUTTON */
+  

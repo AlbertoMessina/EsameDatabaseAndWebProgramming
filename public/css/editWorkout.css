@@ -1,0 +1,152 @@
+.section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 175px);
+}
+
+.workout-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1.2 rem;
+}
+.workout-container div{
+    flex: 50%;
+}
+#description-container{
+    padding:0.5rem;
+}
+
+#table-container{
+ padding-left: 15px;
+}
+#workoutForm{
+    height: 100%;
+}
+#workoutFormContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#series{
+    width: 50%;
+}
+
+/*Select*/
+.select-container{
+    display: flex;
+}
+
+.exercise-container-column{
+display: flex;
+align-items: center;
+flex-direction: row;
+}
+.type-select,  .series-div{
+    width:200px
+}
+.exercise-select{
+    width:180px
+}
+
+/*Select end*/
+.right-element{
+    padding-left:1.5em;
+}
+
+/*Text option*/
+
+.form-label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*Modal Adjustment*/
+
+
+/*Table adjustment*/
+.table-body{
+    height:calc(100vh - 290px);
+    border:none;
+}
+@media screen  and (max-width: 768px)
+{
+    .section-content{
+        height:100%;
+        padding:10px;
+        padding-left:5px;
+     }
+
+     .table-body{
+        height:100%;
+        padding: 0px 5px;
+        padding-top: 5px;
+    }
+    .workout-container{
+        flex-direction:column;
+    }
+    .type-select{
+        width:150px
+    }
+    .series-div{
+        width:100px;
+    }
+    .exercise-select{
+        width:125px;
+    }
+    #series{
+        width:100%;
+    }
+    .small-modal{
+        width:60%;      
+    } 
+}
+  /*Mobile*/
+  @media screen and (max-width: 480px) {
+    .section-content{
+       height:100%;
+       padding:10px;
+       padding-left:5px;
+    }
+
+    #table-container{
+        padding-left: 0px;
+        padding-top:5px;
+       }
+    .table-body{
+        height:100%;
+        padding: 0px 5px;
+        padding-top: 5px;
+    }
+    .workout-container{
+        flex-direction:column;
+    }
+    .small-modal{
+        width:80%;     
+    } 
+    /*Select css*/
+    .type-select{
+        width:100px
+    }
+    .series-div{
+        width:125px;
+    }
+    .exercise-select{
+        width:150px;
+    }
+    .series-div input{
+        width: 75%;
+        padding-right:15px;
+    }
+
+/*Text option*/
+
+.form-label{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+}
+

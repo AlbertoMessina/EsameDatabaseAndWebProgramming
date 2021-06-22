@@ -1,0 +1,199 @@
+/**/
+.profile-section-container{
+   display:block;
+   width:100%;
+   overflow: auto;
+   height: calc(100vh - 175px);
+}
+/*CSS for UserProfile*/
+
+.profile-container{
+   display:flex;
+   width:100%;
+   height:100%;
+   margin: 0px;
+   padding:15px;
+}
+.profile-item-container{
+   display: flex;
+   flex-direction: column;
+}
+
+.profile-item-column{
+   display: flex;
+   flex-direction: column;
+   padding-top: 20px;
+}
+.profile-info{
+   display: flex;
+   flex-direction: row;
+}
+
+.profile-item{
+   display: block;
+   padding-left: 10px;
+   padding-bottom: 10px;
+}
+.photo-container{
+   display:flex;
+   width: 190px;
+   height:204px; 
+   margin:0px;
+}
+.user-photo{
+   width: 100%;
+   height: 100%;
+ 
+}
+
+
+/*CSS label*/
+.attribute-label{
+   font-size: 1em;
+   font-weight: bold;
+}
+.value-label{
+   font-size: 1.2em;
+   padding-left: 5px;
+}
+
+/*CSS  setting profile*/
+#profileSettingSection{
+   display: none;
+}
+.setting-photo-container{
+   position: relative;
+   width: 200px;
+   height:200px; 
+   z-index: 1;
+}
+
+#settingForm{
+   width: 100%;
+   height: 100%;
+   
+}
+
+.form-row{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   margin: 0px;
+}
+
+.form-row div{
+   padding-left: 10px;
+}
+#photoProfile{
+   display: none;
+}
+
+.div-flex{
+   display: flex;
+   margin:0px;
+}
+.custom-file-upload {
+   display: inline-block;
+   padding: 6px 12px;
+   cursor: pointer;
+}
+
+.tag{
+   position: absolute;
+   z-index: 20;
+   padding: 5px;
+   font-weight: bold;
+}
+
+.bi-camera-fill{
+   font-size: 1.5em;
+}
+
+.setting-btn-container{
+   display: flex;
+   justify-content: center;
+   
+}
+.setting-container{
+   display:block;
+   padding:0px!important;
+}
+/*Mobile*/
+@media screen and (max-width: 480px) {
+   /**/
+   .profile-section-container{
+      display:block;
+      width:100%;
+      height: 100%;
+      min-height: calc(100vh - 175px);
+   }
+   /*CSS profile*/
+   .profile-container{
+      display:flex;
+      flex-direction: column;
+      width:100%;
+      height:100%;
+      margin: 0px;
+      padding:15px;
+   }
+   .profile-item-column{
+      padding-top: 10px;
+   }
+   .photo-container{
+      display:flex;
+      margin:auto;
+      width: 150px;
+      height:150px; 
+   }
+   .user-photo{
+      width: 100%;
+      height: 100%;
+    
+   }
+
+   /*CSS Setting*/
+ 
+   .tag{
+      position: absolute;
+      z-index: 20;
+      padding: 5px;
+      left: -5px;
+      top: -10px;
+   }
+   .setting-photo-container{
+      margin:auto;
+      width: 150px;
+      height:150px; 
+   }
+
+   .setting-btn-container{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+   }
+   .bi-camera-fill{
+      font-size:0.8em;
+   }
+}
+@media screen and (max-width: 500px) {
+   /*css profile*/
+   .profile-item-column{
+      padding-top: 8px;
+   }
+   /*css setting*/
+   .form-row{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0px;
+   }
+   .setting-container{
+      margin: auto;
+   }
+   .setting-photo-container{
+      width: 150px;
+      height:150px; 
+   }
+  
+}
+/*end media query*/

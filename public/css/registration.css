@@ -1,0 +1,42 @@
+
+.view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.register-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding: 10px;
+}
+
+#registerForm label{
+    font-size: 1.2rem;  
+}
+
+@media screen and (max-width: 480px) {
+    .register-container{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 100%;
+        justify-content: center;
+        padding: 5px;
+    
+    }
+
+}

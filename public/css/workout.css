@@ -1,0 +1,72 @@
+#exerciseUpperList{
+    display: hidden;
+}
+#workoutFormContainer{
+    display: flex;
+    flex-direction: column;
+}
+/*Select*/
+.select-container{
+    display: flex;
+}
+
+.exercise-container{
+    padding-left: 25px;
+}
+
+/*Select end*/
+
+.right-element{
+    padding-left:1.5em;
+}
+
+/*Show Exercise*/
+#showHeader{
+    display: flex;
+    flex-direction:row;
+    padding-bottom:10px;
+    padding-left: 10px;
+}
+#showHeader span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex: 33%;
+}
+
+#exerciseWorkoutList{
+    list-style-type: none;
+    padding-left: 10px;
+    padding-bottom:5px;
+}
+.exercise-list-elem{
+    display: flex;
+    flex-direction: row;
+    padding-bottom:5px;
+   
+}
+.exercise-list-elem div{
+    flex: 33%;
+}
+
+#showInfo{
+    padding: 0.5rem;
+}
+
+/*Share workout modal*/
+
+  /*Share Icon*/
+  .share-icon-public{
+
+    color: cadetblue;
+
+  }
+
+  .share-icon-private{
+
+    color: black;
+
+  }
+  /*Mobile*/
+@media screen and (max-width: 480px) {
+
+}
