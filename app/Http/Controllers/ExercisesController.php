@@ -18,7 +18,7 @@ class ExercisesController extends Controller
       $queryBuilder->where('custom_id','=', 0);
       $queryBuilder->orWhere('custom_id','=', Auth::user()->id);
       $exercise = $queryBuilder->get();
-      return view('exercise', ['exercise' => $exercise]);
+      return view('exercise')->with('exercise', $exercise);
    }
 
    public function save(ExerciseRequest $request)

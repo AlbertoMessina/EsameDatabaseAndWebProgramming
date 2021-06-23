@@ -22,7 +22,7 @@ class WorkoutController extends Controller
         $client = $user->client;
         $workouts = $client->workouts()->orderBy('publication_date', 'desc')->get();
         $localDate = Carbon::now();
-        return view('workout', ['workouts' => $workouts, 'localDate' => $localDate->toDateString()]);
+        return view('workout')->with('workouts', $workouts)->with('localDate', $localDate->toDateString());
     }
 
     /* */
@@ -88,7 +88,7 @@ class WorkoutController extends Controller
         $exercises = $queryBuilder->get();
         */
         $exercises = $workout['0']->exercises()->select('exercises.id', 'exercises.name', 'exercises.type', 'exercises.difficulty', 'exercise_lists.series', 'exercise_lists.repetition')->get();
-        return view('editWorkout', ['workout' => $workout], ['exercises' => $exercises]);
+        return view('editWorkout')->with('workout',$workout)->with('exercises',$exercises);
     }
 
     /**

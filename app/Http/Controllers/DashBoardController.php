@@ -63,7 +63,8 @@ class dashBoardController extends Controller
             'personalExerciseNumber' => $personalExerciseNumber,
             'favoriteExercise' => $favoriteExercise
         ];
-        return view('dashboard', ['dailyWorkouts' =>  $dailyWorkouts ],[ 'userStats' => $user_stats] );
+        return view('dashboard')->with('dailyWorkouts', $dailyWorkouts )->with('userStats', $user_stats );
+     
     }
 
     /**

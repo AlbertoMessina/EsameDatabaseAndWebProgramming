@@ -34,7 +34,7 @@ class NetworkController extends Controller
         $queryBuilder->groupBy('clients.user_id');
   
         $follwerUsers = $queryBuilder->get();
-        return view('network',  ['publicUsers' => $publicUsers, 'follwerUsers' => $follwerUsers]);
+        return view('network')->with('publicUsers', $publicUsers)->with('follwerUsers' , $follwerUsers);
     }
 
     /**

@@ -15,7 +15,7 @@ class UserController extends Controller
 
       $user = Auth::user();
       $client = $user->client()->get();
-      return view('userProfile', ['client' => $client]);
+      return view('userProfile')->with('client',$client);
    }
 
    public function findUserEmail(Request $request)
