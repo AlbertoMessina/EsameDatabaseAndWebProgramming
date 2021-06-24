@@ -19,6 +19,7 @@ class ConfirmPasswordController extends Controller
     |
     */
 
+    /*NOT USED */
     use ConfirmsPasswords;
 
     /**

@@ -209,7 +209,6 @@ function showWorkout() {
     document.querySelector('#exerciseWorkoutList').innerHTML = "";
     let li_id = this.getAttribute('data-li-reference');
     let id = document.querySelector('#' + li_id + '_name').getAttribute('data-id')
-    //Ajax call  let token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     /*Ajax call*/
     let token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     let request = new Request('/workout/record/' + id, { headers: { "X-CSRFToken": token } });
@@ -226,7 +225,6 @@ function showWorkout() {
             }
         })
         .then(data => {
-            //WORKPOINT
             let workout = data.workout;
             let description = data.workout_description;
             for (let i = 0; i < workout.length; i++) {

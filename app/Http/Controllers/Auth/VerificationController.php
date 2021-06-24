@@ -20,7 +20,7 @@ class VerificationController extends Controller
     */
 
     use VerifiesEmails;
-
+/*NOT USED */
     /**
      * Where to redirect users after verification.
      *

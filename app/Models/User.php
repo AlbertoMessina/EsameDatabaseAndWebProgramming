@@ -38,6 +38,7 @@ class User extends Authenticatable
     /** 
     *users belong to many roles
     *the user can have many roles and the roles can have many user
+    *not used
     */
     public function roles(){
         return $this->belongsToMany('app\Models\Role');
